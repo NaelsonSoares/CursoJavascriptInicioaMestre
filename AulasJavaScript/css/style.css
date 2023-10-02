@@ -13,7 +13,10 @@ p {
 b {
     font-size: 1.5rem;
 }
-.alerta {
+h4 {
+    text-align: left;
+}
+.alert {
   text-transform: uppercase;
   text-align: center;           
   border: 2px solid rgba(0,0,200,0.6);
@@ -25,3 +28,48 @@ b {
   display: inline-block;
   cursor:pointer;
 }
+.nome1{
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-block;
+  }
+  .nome2{
+    color: white;
+    box-shadow: 1px 2px 5px rgba(250,250,200);
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-block;
+    cursor:pointer;
+  }
+  .idade1{
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-block;
+  }
+  .idade2{
+    color: white;
+    box-shadow: 1px 2px 5px rgba(250,250,200);
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-block;
+    cursor:pointer;
+  }
+  .frase1{
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-block;
+  }
+  .frase2{
+    color: white;
+    box-shadow: 1px 2px 5px rgba(250,250,200);
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-block;
+    cursor:pointer;
+  }
