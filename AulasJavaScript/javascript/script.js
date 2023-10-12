@@ -25,6 +25,19 @@ function atualizarNome() {
       function concatenar() {
         let frase2 = 'Meu nome é ' + nome2 +' e tenho ' + idade2 + ' anos!';
         frase1.textContent = ' '+ frase2;
+
+        let frase3 = document.querySelector('.frase4');
+        frase3.addEventListener('click', concatenar);
+        function concatenar() {
+        let frase4 = `Meu nome é  ${nome2}  e tenho ${idade2} anos!`;
+        frase3.textContent = ' '+ frase4;
+
+        tipo.addEventListener('click', tipo);
+        function tipo(){
+          let tipos = `A variável ${typeof nome}`
+        }
+
+        }
       }
     }
   } 
