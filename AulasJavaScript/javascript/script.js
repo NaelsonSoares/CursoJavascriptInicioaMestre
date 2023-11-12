@@ -45,6 +45,7 @@ function atualizarNome() {
       }
     }
   }
+  // CONVERSÃO DE TIPOS DE VARIÁVEIS DE STRING PARA NUMBER (parseInt e parseFloat e toString)
             let entrada1 = document.querySelector('.entrada');
             entrada1.addEventListener('click', entradaqui);
             function entradaqui() {
