@@ -46,7 +46,7 @@ function digiteNome() {
   }
 }
 // CONVERSÃO DE TIPOS DE VARIÁVEIS DE STRING PARA NUMBER (parseInt e parseFloat e toString)
-let entrada1 = document.querySelector('.entrada');
+let entrada1 = document.querySelector('.digita');
 entrada1.addEventListener('click', entradaqui);
 function entradaqui() {
   let entrada =   prompt();
@@ -123,7 +123,7 @@ function entradaqui() {
       }
     }
     // INCLEMENTO E DECLEMENTO (também nominados de pós inclemento e pós decremento)
-    let entrada2 = document.querySelector('.entra1');
+    let entrada2 = document.querySelector('.digita3');
     entrada2.addEventListener('click', clementar1);
     function clementar1() {
       let entra1 = prompt();
@@ -158,7 +158,7 @@ function entradaqui() {
       }
     }
 
-    let entrada3 = document.querySelector('.entra2');
+    let entrada3 = document.querySelector('.digita4');
     entrada3.addEventListener('click', clementar2);
     function clementar2() {
       let entra2 = prompt();
@@ -178,3 +178,73 @@ function entradaqui() {
           }
         }
       } 
+      // OPERADORES DE COMPARAÇÃO
+      let entrada4 = document.querySelector('.digita5');
+      entrada4.addEventListener('click', comparar1);
+      function comparar1() {
+        let digita5 = prompt();
+        entrada4.textContent = digita5
+
+        let entrada5 = document.querySelector('.digita6');
+        entrada5.addEventListener('click', compara);
+        function compara() {
+          let digita6 = prompt();
+          entrada5.textContent = digita6;
+
+          let ivalor = document.querySelector(`.i_valor`);
+          ivalor.addEventListener('click', igual_valor);
+          function igual_valor() {
+            let i_valor = digita5 == digita6;
+            ivalor.textContent = `${digita5} e ${digita6} tem os seus valores iguais (= =)? ${i_valor}`
+
+            let ivTipo = document.querySelector('.i_vTipo');
+            ivTipo.addEventListener('click', igual_vtipo);
+            function igual_vtipo() {
+              let i_vTipo = digita5 === digita6;
+              ivTipo.textContent = `${digita5} e ${digita6} tem os seus valores e tipos iguais (= = =)? ${i_vTipo}`;
+
+              let menor = document.querySelector('.menorq');
+              menor.addEventListener('click', menor_q);
+              function menor_q() {
+                let menorq = digita5 < digita6
+                menor.textContent = `${digita5} é menor que (<) ${digita6}? ${menorq}`;
+
+                let maior = document.querySelector('.maiorq');
+                maior.addEventListener('click', maior_q);
+                function maior_q() {
+                  let maiorq = digita5 > digita6
+                  maior.textContent =  `${digita5} é maior que (>) ${digita6}? ${maiorq}`;
+
+                  let meIgual = document.querySelector('.me_igual');
+                  meIgual.addEventListener('click', me_Igual);
+                  function me_Igual() {
+                    let me_igual = digita5 <= digita6
+                    meIgual.textContent =  `${digita5} é menor ou igual a (<=) ${digita6}? ${me_igual}`;
+
+                    let maIgual = document.querySelector('.ma_igual');
+                    maIgual.addEventListener('click', ma_Igual);
+                    function ma_Igual() {
+                      let ma_igual = digita5 >= digita6
+                      maIgual.textContent = `${digita5} é maior ou igual a (>=) ${digita6}? ${ma_igual}`;
+
+                      let diValor = document.querySelector('.d_valor');
+                      diValor.addEventListener('click', di_valor);
+                      function di_valor() {
+                        let d_valor = digita5 != digita6
+                        diValor.textContent =  `${digita5} e ${digita6} tem os seus valores diferentes (!=)? ${d_valor}`;
+
+                        let divTipo = document.querySelector('.d_vTipo');
+                        divTipo.addEventListener('click', di_vTipo);
+                        function di_vTipo() {
+                          let d_vTipo = digita5 !== digita6
+                          divTipo.textContent =  `${digita5} e ${digita6} tem os seus valores e tipos diferentes (!= =)? ${d_vTipo}`;
+                        }
+                      }
+                    }
+                  }
+                }                
+              }
+            }
+          }
+        }
+      }

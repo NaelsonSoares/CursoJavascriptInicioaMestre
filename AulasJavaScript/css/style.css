@@ -102,7 +102,7 @@ h4 {
     display: inline-block;
     cursor:pointer;
   }
-  .entrada{
+  .digita{
     text-align: left;
     color: white;
     box-shadow: 1px 2px 5px rgba(250,250,200);
@@ -198,7 +198,7 @@ h4 {
     padding: 3px 10px;
     cursor: pointer;
   }
-  .entra1{
+  .digita3{
     text-align: left;
     color: white;
     box-shadow: 1px 2px 5px rgba(250,250,200);
@@ -237,7 +237,7 @@ h4 {
     display: inline-flex;
     cursor: pointer;
   }
-  .entra2{
+  .digita4{
     text-align: left;
     color: white;
     box-shadow: 1px 2px 5px rgba(250,250,200);
@@ -260,3 +260,77 @@ h4 {
     padding: 3px 10px;
     cursor: pointer;
   }
+.digita5{
+  text-align: left;
+    color: white;
+    box-shadow: 1px 2px 5px rgba(250,250,200);
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-flex;
+    cursor:pointer;
+}
+.digita6{
+  text-align: left;
+    color: white;
+    box-shadow: 1px 2px 5px rgba(250,250,200);
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-flex;
+    cursor:pointer;
+}
+.i_valor{
+  text-align: left;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.i_vTipo{
+  text-align: left;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.menorq{
+  text-align: left;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.maiorq{
+  text-align: left;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.me_igual{
+  text-align: left;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.ma_igual{
+  text-align: left;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.d_valor{
+  text-align: left;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+.d_vTipo{
+  text-align: left;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
