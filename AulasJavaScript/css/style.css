@@ -299,13 +299,6 @@ h4 {
     padding: 3px 10px;
     cursor: pointer;
 }
-.maiorq{
-  text-align: left;
-    color: white;
-    border-radius: 10px;
-    padding: 3px 10px;
-    cursor: pointer;
-}
 .me_igual{
   text-align: left;
     color: white;
@@ -313,24 +306,37 @@ h4 {
     padding: 3px 10px;
     cursor: pointer;
 }
-.ma_igual{
+.digita7{
   text-align: left;
     color: white;
+    box-shadow: 1px 2px 5px rgba(250,250,200);
     border-radius: 10px;
     padding: 3px 10px;
-    cursor: pointer;
+    display: inline-flex;
+    cursor:pointer;
+}.digita8{
+  text-align: left;
+    color: white;
+    box-shadow: 1px 2px 5px rgba(250,250,200);
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-flex;
+    cursor:pointer;
 }
-.d_valor{
+.digita9{
   text-align: left;
     color: white;
+    box-shadow: 1px 2px 5px rgba(250,250,200);
     border-radius: 10px;
     padding: 3px 10px;
-    cursor: pointer;
+    display: inline-flex;
+    cursor:pointer;
 }
-.d_vTipo{
-  text-align: left;
+.resposta{
+  font-size: 1.2rem;
     color: white;
     border-radius: 10px;
     padding: 3px 10px;
+    display: inline-block;    
     cursor: pointer;
 }

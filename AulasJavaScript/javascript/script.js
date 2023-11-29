@@ -178,7 +178,7 @@ function entradaqui() {
           }
         }
       } 
-      // OPERADORES DE COMPARAÇÃO
+      // OPERADORES DE COMPARAÇÃO E CONDICIONA IF ELSE
       let entrada4 = document.querySelector('.digita5');
       entrada4.addEventListener('click', comparar1);
       function comparar1() {
@@ -194,55 +194,78 @@ function entradaqui() {
           let ivalor = document.querySelector(`.i_valor`);
           ivalor.addEventListener('click', igual_valor);
           function igual_valor() {
-            let i_valor = digita5 == digita6;
-            ivalor.textContent = `${digita5} e ${digita6} tem os seus valores iguais (= =)? ${i_valor}`
+           if ( digita5 == digita6 ) {
+            ivalor.textContent = ` ${digita5} e ${digita6} tem os seus valores iguais (= =). `;
+           } else {
+            ivalor.textContent = ` ${digita5} e ${digita6} tem os seus valores diferentes (!=). `;
+           }
 
             let ivTipo = document.querySelector('.i_vTipo');
             ivTipo.addEventListener('click', igual_vtipo);
             function igual_vtipo() {
-              let i_vTipo = digita5 === digita6;
-              ivTipo.textContent = `${digita5} e ${digita6} tem os seus valores e tipos iguais (= = =)? ${i_vTipo}`;
-
+                if ( digita5 === digita6 ) {
+                    ivTipo.textContent = ` ${digita5} e ${digita6} tem os seus valores e tipos iguais (= = =). `
+                } else {
+                    ivTipo.textContent = ` ${parseInt(digita5)} e ${digita6} tem os seus valores e tipos diferentes (!= =). `
+                }
+                
               let menor = document.querySelector('.menorq');
               menor.addEventListener('click', menor_q);
               function menor_q() {
-                let menorq = digita5 < digita6
-                menor.textContent = `${digita5} é menor que (<) ${digita6}? ${menorq}`;
-
-                let maior = document.querySelector('.maiorq');
-                maior.addEventListener('click', maior_q);
-                function maior_q() {
-                  let maiorq = digita5 > digita6
-                  maior.textContent =  `${digita5} é maior que (>) ${digita6}? ${maiorq}`;
+                if ( digita5 < digita6 ) {
+                    menor.textContent = ` ${digita5} É menor que (<) ${digita6}. `;
+                } else if ( digita5 > digita6 ) {
+                    menor.textContent = ` ${digita5} É maior que (>) ${digita6}. `;
+                } else {
+                    menor.textContent = 'Tem valores iguais'
+                }
 
                   let meIgual = document.querySelector('.me_igual');
                   meIgual.addEventListener('click', me_Igual);
                   function me_Igual() {
-                    let me_igual = digita5 <= digita6
-                    meIgual.textContent =  `${digita5} é menor ou igual a (<=) ${digita6}? ${me_igual}`;
-
+                    if (  digita5 <= digita6 ) {
+                        meIgual.textContent =  ` ${digita5} é menor ou igual a (<=) ${digita6}. `;
+                    } else {
+                        meIgual.textContent = `${digita5} é maior ou igual a (>=) ${digita6}. `;
+                    }
                     let maIgual = document.querySelector('.ma_igual');
                     maIgual.addEventListener('click', ma_Igual);
                     function ma_Igual() {
                       let ma_igual = digita5 >= digita6
                       maIgual.textContent = `${digita5} é maior ou igual a (>=) ${digita6}? ${ma_igual}`;
-
-                      let diValor = document.querySelector('.d_valor');
-                      diValor.addEventListener('click', di_valor);
-                      function di_valor() {
-                        let d_valor = digita5 != digita6
-                        diValor.textContent =  `${digita5} e ${digita6} tem os seus valores diferentes (!=)? ${d_valor}`;
-
-                        let divTipo = document.querySelector('.d_vTipo');
-                        divTipo.addEventListener('click', di_vTipo);
-                        function di_vTipo() {
-                          let d_vTipo = digita5 !== digita6
-                          divTipo.textContent =  `${digita5} e ${digita6} tem os seus valores e tipos diferentes (!= =)? ${d_vTipo}`;
-                        }
-                      }
-                    }
                   }
                 }                
+              }
+            }
+          }
+        }
+      }
+      // OPERADORES LÓGICOS
+      let entrada6 = document.querySelector('.digita7');
+      entrada6.addEventListener('click', idade);
+      function idade() {
+        let digita7 = prompt();
+        entrada6.textContent = digita7;
+
+        let entrada7 = document.querySelector('.digita8');
+        entrada7.addEventListener('click', responsavel);
+        function responsavel() {
+          let digita8 = prompt();
+          entrada7.textContent = digita8;
+
+          let entrada8 = document.querySelector('.digita9');
+          entrada8.addEventListener('click', passagem);
+          function passagem() {
+            let digita9 = prompt();
+            entrada8.textContent = digita9
+
+            let confirme = document.querySelector('.resposta');
+            confirme.addEventListener('click', conferi)
+            function conferi() {              
+              if( (digita7 >= 18 || digita8 == 'sim') && digita9 == 'sim' ) {
+                confirme.textContent ='Autorizado a embarca';
+              } else{
+                  confirme.textContent = 'Não Autorizado a embarca';                
               }
             }
           }
