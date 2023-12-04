@@ -114,6 +114,14 @@ function entradaqui() {
               function raiz_quadrada() {
                 let potencia2 = parseInt(digito1) ** parseInt(digito2);
                 raiz2.textContent = `Raiz quadrada = ${potencia2}`;
+
+                     // OPERADOR TERNÁRIO
+                let notas = document.querySelector('.media');
+                notas.addEventListener('click', exemplo);
+                function exemplo() {
+                    let media = ( parseInt(digito1) + parseInt(digito2 ) ) / 2;
+                    notas.textContent = ( media >= 5 ) ? "Aprovado" : "Reprovado"; 
+                   }
                   }
                 }
               }
@@ -122,6 +130,7 @@ function entradaqui() {
         }
       }
     }
+
     // INCLEMENTO E DECLEMENTO (também nominados de pós inclemento e pós decremento)
     let entrada2 = document.querySelector('.digita3');
     entrada2.addEventListener('click', clementar1);
@@ -178,6 +187,7 @@ function entradaqui() {
           }
         }
       } 
+
       // OPERADORES DE COMPARAÇÃO E CONDICIONA IF ELSE
       let entrada4 = document.querySelector('.digita5');
       entrada4.addEventListener('click', comparar1);
@@ -240,7 +250,21 @@ function entradaqui() {
           }
         }
       }
+
       // OPERADORES LÓGICOS
+      /* TABELA DE USO DOS OPERADORES LÓGICOS
+                                                                            OPERADORES  
+      EXPRESSÃO ( A )       EXPRESSÃO ( B )          &&               ||     
+            TRUE                        TRUE                    TRUE          TRUE        
+            TRUE                        FALSE                   FALSE         TRUE
+            FALSE                       TRUE                    FALSE         TRUE
+            FALSE                       FALSE                   FALSE         FALSE
+
+        OPERADOR DE NEGAÇÃO ( ! )
+      EXPRESSÃO ( C )       ( !C )  NEGAÇÃO DE ( C )
+        TRUE                      FALSE
+        FALSE                    TRUE  
+      */
       let entrada6 = document.querySelector('.digita7');
       entrada6.addEventListener('click', idade);
       function idade() {
@@ -271,3 +295,98 @@ function entradaqui() {
           }
         }
       }
+
+      // VALORES FALSY E TRUTHY
+      // VALORES = 0 (ZERO), " ", NaN, UNDEDFINED, NULL, FALSE
+      // OS DEMAIS SÃO TRUTHY.
+     /* if (  ) {
+        console.log('true')
+      } else {
+        console.log('false')
+      }*/
+
+      // CONDICIONAL SWITCH
+      let entrada9 = document.querySelector('.digita10');
+      entrada9.addEventListener('click', diasemana);
+      function diasemana( ) {
+        let digita10 = prompt();
+        entrada9.textContent = digita10;
+
+        let dias = document.querySelector('.diaseman');
+        dias.addEventListener('click', odia);
+        function odia( ) {
+            let diaseman = parseInt(digita10);
+            
+            switch( diaseman ) {
+            case 0:
+                        diaseman = 'Domingo'
+                    break
+            case 1:
+                        diaseman = 'Segunda-feira'
+                    break
+            case 2:
+                        diaseman = 'Terça-feira'
+                    break
+             case 3:
+                        diaseman = 'Quarta-feira'
+                    break
+            case 4:
+                        diaseman = 'Quinta-feira'
+                    break
+            case 5:
+                        diaseman = 'Sexta-feira'
+                    break
+            case 6:
+                        diaseman = 'Sábado'
+                    break
+            default:
+                        diaseman = ' digita um número entre 0 e 6 '
+          }
+                dias.textContent = diaseman;
+        }     
+      }
+
+      // CALCULADORA COM SWITCH
+    let entrada10 = document.querySelector('.digita11');
+    entrada10.addEventListener('click', numero1);
+    function numero1( ) {
+        let digita11 = parseInt( prompt( ) );
+        entrada10.textContent = digita11;
+
+        let entrada11 = document.querySelector('.digita12');
+        entrada11.addEventListener('click', numero2);
+        function numero2( ){
+            let digita12 = parseInt( prompt( ) );
+            entrada11.textContent = digita12;
+
+            let calculo = document.querySelector('.calcular');
+            calculo.addEventListener('click', operacao);
+            function operacao() {
+                let calcular = parseInt( prompt( ) )
+                
+                 switch( calcular) {
+                    case 0:
+                        calcular = digita11 + digita12
+                        break
+                    case 1:
+                        calcular = digita11 - digita12
+                        break
+                    case 2:
+                        calcular = digita11 * digita12
+                        break
+                    case 3:
+                        calcular = digita11 / digita12
+                        break
+                    case 4:
+                        calcular = digita11 % digita12
+                        break
+                    case 5:
+                        calcular = digita11 ** digita12
+                        break
+                    default:
+                        calcular = "Essa opção não é válida! ";
+                }                
+                calculo.textContent = calcular;
+            }
+        }
+    }

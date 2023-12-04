@@ -198,6 +198,13 @@ h4 {
     padding: 3px 10px;
     cursor: pointer;
   }
+  .media{
+    text-align: left;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    cursor: pointer;
+  }
   .digita3{
     text-align: left;
     color: white;
@@ -339,4 +346,95 @@ h4 {
     padding: 3px 10px;
     display: inline-block;    
     cursor: pointer;
+}
+.digita10{
+  font-size: 1.2rem;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-block;    
+    cursor: pointer;
+}
+.diaseman{
+  font-size: 1.2rem;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-block;    
+    cursor: pointer;
+}
+.digita11{
+  text-align: left;
+    color: white;
+    box-shadow: 1px 2px 5px rgba(250,250,200);
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-flex;
+    cursor:pointer;
+}
+.digita12{
+  text-align: left;
+    color: white;
+    box-shadow: 1px 2px 5px rgba(250,250,200);
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-flex;
+    cursor:pointer;
+}
+.calcular{
+  text-align: left;
+    color: white;
+    box-shadow: 1px 2px 5px rgba(250,250,200);
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-flex;
+    cursor:pointer;
+}
+.adicao{
+  text-align: left;
+  color: white;
+  box-shadow: 1px 2px 5px rgba(250,250,200);
+  border-radius: 10px;
+  padding: 3px 10px;
+  display: inline-flex;
+}
+.subtracao{
+  text-align: left;
+  color: white;
+  box-shadow: 1px 2px 5px rgba(250,250,200);
+  border-radius: 10px;
+  padding: 3px 10px;
+  display: inline-flex;
+}
+.multiplicacao{
+  text-align: left;
+  color: white;
+  box-shadow: 1px 2px 5px rgba(250,250,200);
+  border-radius: 10px;
+  padding: 3px 10px;
+  display: inline-flex;
+}
+.divisao{
+  text-align: left;
+  color: white;
+  box-shadow: 1px 2px 5px rgba(250,250,200);
+  border-radius: 10px;
+  padding: 3px 10px;
+  display: inline-flex;
+}
+.restodivisao{
+  text-align: left;
+  color: white;
+  box-shadow: 1px 2px 5px rgba(250,250,200);
+  border-radius: 10px;
+  padding: 3px 10px;
+  display: inline-flex;
+}
+.raizquadrada{
+  text-align: left;
+  color: white;
+  box-shadow: 1px 2px 5px rgba(250,250,200);
+  border-radius: 10px;
+  padding: 3px 10px;
+  display: inline-flex;
 }
