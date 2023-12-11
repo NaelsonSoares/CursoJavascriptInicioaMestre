@@ -263,8 +263,8 @@ function entradaqui() {
         OPERADOR DE NEGAÇÃO ( ! )
       EXPRESSÃO ( C )       ( !C )  NEGAÇÃO DE ( C )
         TRUE                      FALSE
-        FALSE                    TRUE  
-      */
+        FALSE                    TRUE  */
+      
       let entrada6 = document.querySelector('.digita7');
       entrada6.addEventListener('click', idade);
       function idade() {
@@ -296,14 +296,14 @@ function entradaqui() {
         }
       }
 
-      // VALORES FALSY E TRUTHY
-      // VALORES = 0 (ZERO), " ", NaN, UNDEDFINED, NULL, FALSE
-      // OS DEMAIS SÃO TRUTHY.
-     /* if (  ) {
+      /*VALORES FALSY E TRUTHY
+      VALORES = 0 (ZERO), " ", NaN, UNDEDFINED, NULL, FALSE
+      OS DEMAIS SÃO TRUTHY.
+      if (  ) {
         console.log('true')
       } else {
         console.log('false')
-      }*/
+      */
 
       // CONDICIONAL SWITCH
       let entrada9 = document.querySelector('.digita10');
@@ -390,3 +390,21 @@ function entradaqui() {
             }
         }
     }
+
+    //LOOP WHILE
+    let entrada12 = document.querySelector('.digita13');
+    entrada12.addEventListener('click', contador);
+    function contador( ) {
+        let digita13 = parseInt(prompt());
+        entrada12.textContent = digita13;
+        
+        let tabular = document.querySelector('.tabuada');
+        tabular.addEventListener('click', calculos);
+        function calculos(){
+            let tabuada = 0
+                while(tabuada <= 10){
+                   tabular.textContent += (` ${tabuada } x ${digita13 } = ${ tabuada * digita13} \n`  )
+                        tabuada++
+                }
+            }
+        } 
