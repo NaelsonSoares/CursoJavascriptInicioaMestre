@@ -439,12 +439,110 @@ function entradaqui() {
             }while(loopdowhile <= 10)
           }
       } 
+ //LOOP WHILE
+    let entrada12 = document.querySelector('.digita13');
+    entrada12.addEventListener('click', contador);
+    function contador( ) {
+        let digita13 = parseInt(prompt());
+        entrada12.textContent = digita13;
+        
+        let tabular1 = document.querySelector('.loopwhile');
+        tabular1.addEventListener('click', calculo_while);
+        function calculo_while(){
+            let loopwhile = 0
+                while(loopwhile <= 10){//condição a ser executada
+                  tabular1.textContent += (` ${loopwhile } x ${digita13 } = ${ loopwhile * digita13 } \\` )//expressão será executada até condição for false
+                   //tabuada = (` ${tabuada } x ${digita13 } = ${ tabuada * digita13}\\n` )
+                   //tabular1.textContent = tabuada.replace(/\\n/g, '\n');
+                        loopwhile++
+                        //  NO WHILE A MANIPULAR O LOOP DEPOIS DO INCREMENTO
+                  }
+          }
+                let tabular2 = document.querySelector('.loopfor');
+                  tabular2.addEventListener('click', calculo_for);
+                  function calculo_for(){
+                    for ( let loopfor = 5; loopfor<= 10; loopfor++){
 
-// ARROW FUNCTION RECEBENDO PARÂMETROS
+                      // MANIPULAÇÃO DO LOOP
+                        /*if(loopfor === 5){
+                          continue
+                        }*/
+                      tabular2.textContent += (` ${loopfor } x ${digita13 } = ${ (loopfor * digita13) } \\` )
+                    }
+                  }
+
+        let tabular3 = document.querySelector('.loopdowhile');
+        tabular1.addEventListener('click', calculo_dowhile);
+        function calculo_dowhile(){
+            let loopdowhile = 11
+            do{
+              // MANIPULAÇÃO DO LOOP
+              /*if(loopdowhile > 10){
+                tabular3.textContent = 'Número maior que 10'
+                break
+              }*/
+              tabular3.textContent += (` ${loopdowhile } x ${digita13 } = ${ loopdowhile * digita13 } \\` )//expressão será excutada pelo menos uma vez mesmo qua a condião for false
+                        loopdowhile++
+            }while(loopdowhile <= 10)
+          }
+      } 
+/*ARROW FUNCTION RECEBENDO PARÂMETROS
 let entrada13 = document.querySelector ('.arrow_funcao');
 entrada13.addEventListener('click', arrow_f);
 const arrow_f = ( n1 = 0, n2 = 0 ) => {
   n1 = parseInt( prompt( ) );
   n2 = parseInt( prompt( ) );
 }
-entrada13.textContent = n1 * n2;
+entrada13.textContent = n1 * n2;*/
+
+ //TABUADA COM LOOP WHILE
+ let entrada12 = document.querySelector('.digita13');
+ entrada12.addEventListener('click', contador);
+ function contador( ) {
+     let digita13 = parseInt(prompt());
+     entrada12.textContent = digita13;
+     
+     let tabular1 = document.querySelector('.loopwhile');
+     tabular1.addEventListener('click', calculo_while);
+     function calculo_while(){
+         let loopwhile = 0
+             while(loopwhile <= 10){//condição a ser executada
+               tabular1.textContent += (` ${loopwhile } x ${digita13 } = ${ loopwhile * digita13 } \\` )//expressão será executada até condição for false
+                //tabuada = (` ${tabuada } x ${digita13 } = ${ tabuada * digita13}\\n` )
+                //tabular1.textContent = tabuada.replace(/\\n/g, '\n');
+                     loopwhile++
+                     //  NO WHILE A MANIPULAR O LOOP DEPOIS DO INCREMENTO
+               }
+       }
+             let tabular2 = document.querySelector('.loopfor');
+               tabular2.addEventListener('click', calculo_for);
+               function calculo_for(){
+                 for ( let loopfor = 5; loopfor<= 10; loopfor++){
+
+                   // MANIPULAÇÃO DO LOOP
+                     /*if(loopfor === 5){
+                       continue
+                     }*/
+                   tabular2.textContent += (` ${loopfor } x ${digita13 } = ${ (loopfor * digita13) } \\` )
+                 }
+               }
+
+     let tabular3 = document.querySelector('.loopdowhile');
+     tabular1.addEventListener('click', calculo_dowhile);
+     function calculo_dowhile(){
+         let loopdowhile = 11
+         do{
+           // MANIPULAÇÃO DO LOOP
+           /*if(loopdowhile > 10){
+             tabular3.textContent = 'Número maior que 10'
+             break
+           }*/
+           tabular3.textContent += (` ${loopdowhile } x ${digita13 } = ${ loopdowhile * digita13 } \\` )//expressão será excutada pelo menos uma vez mesmo qua a condião for false
+                     loopdowhile++
+         }while(loopdowhile <= 10)
+       }
+   } 
+
+
+
+
